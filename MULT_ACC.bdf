@@ -22,7 +22,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.3"))
 (pin
 	(input)
-	(rect 56 32 224 48)
+	(rect 96 32 264 48)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "a[7..0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
@@ -38,7 +38,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 56 64 224 80)
+	(rect 96 64 264 80)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "b" (rect 5 0 10 12)(font "Arial" ))
 	(pt 168 8)
@@ -54,7 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 640 48 808 64)
+	(rect 568 48 736 64)
 	(text "INPUT" (rect 7 0 35 10)(font "Arial" (font_size 6)))
 	(text "in[7..0]" (rect 129 0 163 12)(font "Arial" ))
 	(pt 0 8)
@@ -71,7 +71,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 24 152 200 168)
+	(rect 96 176 272 192)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
 	(text "out[7..0]" (rect 5 0 46 12)(font "Arial" ))
 	(pt 176 8)
@@ -88,7 +88,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 24 192 200 208)
+	(rect 96 216 272 232)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
 	(text "z" (rect 5 0 9 12)(font "Arial" ))
 	(pt 176 8)
@@ -133,7 +133,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 624 152 656 184)
+	(rect 600 176 632 208)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst4" (rect 3 21 26 33)(font "Arial" )(invisible))
 	(port
@@ -150,7 +150,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 200 144 248 176)
+	(rect 272 168 320 200)
 	(text "WIRE" (rect 24 0 47 10)(font "Arial" (font_size 6)))
 	(text "inst7" (rect 22 21 45 33)(font "Arial" ))
 	(port
@@ -175,7 +175,7 @@ applicable agreement for further details.
 	(flipy)
 )
 (symbol
-	(rect 200 184 248 216)
+	(rect 272 208 320 240)
 	(text "WIRE" (rect 24 0 47 10)(font "Arial" (font_size 6)))
 	(text "inst8" (rect 22 21 45 33)(font "Arial" ))
 	(port
@@ -200,7 +200,7 @@ applicable agreement for further details.
 	(flipy)
 )
 (symbol
-	(rect 464 96 592 192)
+	(rect 440 120 568 216)
 	(text "SUM_8B" (rect 16 16 64 30)(font "Arial" (font_size 8)))
 	(text "inst9" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -243,67 +243,66 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 312 72)
-	(pt 224 72)
-)
-(connector
 	(pt 312 40)
-	(pt 224 40)
+	(pt 264 40)
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS240>>" (rect 600 128 718 140)(font "Arial" )(invisible))
-	(pt 592 144)
-	(pt 640 144)
+	(pt 312 72)
+	(pt 264 72)
 )
 (connector
-	(pt 640 144)
-	(pt 640 152)
-)
-(connector
-	(pt 528 192)
-	(pt 528 208)
-	(bus)
-)
-(connector
-	(text "x[8]" (rect 344 128 362 140)(font "Arial" ))
-	(pt 464 144)
-	(pt 336 144)
-)
-(connector
-	(text "x[7..0]" (rect 345 192 376 204)(font "Arial" ))
-	(pt 528 208)
-	(pt 336 208)
-	(bus)
-)
-(connector
-	(text "x[0]" (rect 256 184 274 196)(font "Arial" ))
-	(pt 248 200)
-	(pt 280 200)
-)
-(connector
-	(text "x[8..1]" (rect 256 144 287 156)(font "Arial" ))
-	(pt 248 160)
-	(pt 280 160)
-	(bus)
+	(pt 616 168)
+	(pt 616 176)
 )
 (connector
 	(pt 440 56)
-	(pt 512 56)
+	(pt 488 56)
 	(bus)
 )
 (connector
-	(pt 512 56)
-	(pt 512 96)
+	(pt 488 56)
+	(pt 488 120)
 	(bus)
 )
 (connector
-	(pt 640 56)
-	(pt 544 56)
+	(pt 568 168)
+	(pt 616 168)
+)
+(connector
+	(pt 520 56)
+	(pt 568 56)
 	(bus)
 )
 (connector
-	(pt 544 56)
-	(pt 544 96)
+	(pt 520 120)
+	(pt 520 56)
+	(bus)
+)
+(connector
+	(text "x[8]" (rect 384 152 402 164)(font "Arial" ))
+	(pt 440 168)
+	(pt 376 168)
+)
+(connector
+	(text "x[0]" (rect 328 208 346 220)(font "Arial" ))
+	(pt 320 224)
+	(pt 352 224)
+)
+(connector
+	(text "x[8..1]" (rect 328 168 359 180)(font "Arial" ))
+	(pt 320 184)
+	(pt 352 184)
+	(bus)
+)
+(connector
+	(pt 504 216)
+	(pt 504 240)
+	(bus)
+)
+(connector
+	(text "x[7..0]" (rect 385 224 416 236)(font "Arial" ))
+	(pt 504 240)
+	(pt 376 240)
 	(bus)
 )
