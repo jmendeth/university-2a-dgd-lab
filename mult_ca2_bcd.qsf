@@ -490,6 +490,10 @@ set_global_assignment -name VHDL_FILE bcd7seg.vhd
 set_global_assignment -name BDF_FILE MULT_CA2_BCD.bdf
 set_global_assignment -name BDF_FILE CA2_SS_4B.bdf
 set_global_assignment -name BDF_FILE CA2_SS_8B.bdf
+set_global_assignment -name VHDL_FILE DEC_3B.vhd
+set_global_assignment -name VHDL_FILE Calculadora.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE DEC_3B.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Calculadora.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
