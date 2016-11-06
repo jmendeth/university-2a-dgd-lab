@@ -9,5 +9,5 @@ end;
 
 architecture logic of sel is
 begin
-sel <= res when show = '1' else "11111111";
+  sel <= res when show = '1' else "11111111";
 end logic;
