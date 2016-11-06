@@ -9,7 +9,7 @@ end;
 
 architecture logic of AperB is
   component CA2_BCD_8B is
-    port ( Ca2 : in std_logic_vector(4 downto 0);
+    port ( Ca2 : in std_logic_vector(7 downto 0);
            BCD : out std_logic_vector(7 downto 0) );
   end component;
 
