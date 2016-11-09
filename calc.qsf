@@ -49,27 +49,8 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name LL_ROOT_REGION ON -entity calc -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -entity calc -section_id "Root Region"
-set_global_assignment -name VHDL_FILE ppal/AperB.vhd
-set_global_assignment -name VHDL_FILE ppal/CA2_BCD_8B.vhd
-set_global_assignment -name VHDL_FILE ppal/control.vhd
-set_global_assignment -name VHDL_FILE ppal/keygroup.vhd
-set_global_assignment -name VHDL_FILE ppal/sel.vhd
-set_global_assignment -name VHDL_FILE bcd7seg.vhd
-set_global_assignment -name VHDL_FILE f_div.vhd
-set_global_assignment -name VHDL_FILE hex_disps.vhd
-set_global_assignment -name VHDL_FILE keytest.vhd
-set_global_assignment -name VHDL_FILE leds.vhd
-set_global_assignment -name BDF_FILE ppal.bdf
-set_global_assignment -name BSF_FILE ppal/AperB.bsf
-set_global_assignment -name BSF_FILE ppal/CA2_BCD_8B.bsf
-set_global_assignment -name BSF_FILE ppal/control.bsf
-set_global_assignment -name BSF_FILE ppal/keygroup.bsf
-set_global_assignment -name BSF_FILE ppal/regs.bsf
-set_global_assignment -name BSF_FILE ppal/sel.bsf
-set_global_assignment -name BDF_FILE calc.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name BDF_FILE ppal/regs.bdf
 set_location_assignment PIN_N25 -to SW[0]
 set_location_assignment PIN_N26 -to SW[1]
 set_location_assignment PIN_P25 -to SW[2]
@@ -495,4 +476,28 @@ set_location_assignment PIN_V24 -to GPIO_B[32]
 set_location_assignment PIN_V23 -to GPIO_B[33]
 set_location_assignment PIN_W25 -to GPIO_B[34]
 set_location_assignment PIN_W23 -to GPIO_B[35]
+set_global_assignment -name BDF_FILE imported/MULT_8x1.bdf
+set_global_assignment -name BDF_FILE imported/MULT_8x8.bdf
+set_global_assignment -name BDF_FILE imported/MULT_ACC.bdf
+set_global_assignment -name BDF_FILE imported/SUM_1B.bdf
+set_global_assignment -name BDF_FILE imported/SUM_8B.bdf
+set_global_assignment -name VHDL_FILE ppal/CA2_BCD_8B.vhd
+set_global_assignment -name VHDL_FILE ppal/control.vhd
+set_global_assignment -name VHDL_FILE ppal/keygroup.vhd
+set_global_assignment -name VHDL_FILE ppal/sel.vhd
+set_global_assignment -name VHDL_FILE bcd7seg.vhd
+set_global_assignment -name VHDL_FILE f_div.vhd
+set_global_assignment -name VHDL_FILE hex_disps.vhd
+set_global_assignment -name VHDL_FILE keytest.vhd
+set_global_assignment -name VHDL_FILE leds.vhd
+set_global_assignment -name BDF_FILE calc.bdf
+set_global_assignment -name BDF_FILE ppal.bdf
+set_global_assignment -name BSF_FILE ppal/AperB.bsf
+set_global_assignment -name BSF_FILE ppal/CA2_BCD_8B.bsf
+set_global_assignment -name BSF_FILE ppal/control.bsf
+set_global_assignment -name BSF_FILE ppal/keygroup.bsf
+set_global_assignment -name BSF_FILE ppal/regs.bsf
+set_global_assignment -name BSF_FILE ppal/sel.bsf
+set_global_assignment -name BDF_FILE ppal/regs.bdf
+set_global_assignment -name BDF_FILE ppal/AperB.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
