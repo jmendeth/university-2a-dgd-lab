@@ -1,0 +1,85 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 272 240)
+	(text "ppal" (rect 5 0 28 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "nkey" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "nkey" (rect 21 59 48 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "keycode[3..0]" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "keycode[3..0]" (rect 21 83 97 97)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88)(line_width 3))
+	)
+	(port
+		(pt 96 0)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 88 24 102 39)(font "Arial" (font_size 8))(vertical))
+		(line (pt 96 16)(pt 96 0)(line_width 1))
+	)
+	(port
+		(pt 112 0)
+		(input)
+		(text "nrst" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "nrst" (rect 104 24 118 46)(font "Arial" (font_size 8))(vertical))
+		(line (pt 112 16)(pt 112 0)(line_width 1))
+	)
+	(port
+		(pt 208 88)
+		(output)
+		(text "show" (rect 24 0 57 14)(font "Arial" (font_size 8)))
+		(text "show" (rect 154 83 187 97)(font "Arial" (font_size 8)))
+		(line (pt 208 88)(pt 192 88)(line_width 1))
+	)
+	(port
+		(pt 80 176)
+		(output)
+		(text "opA[3..0]" (rect -8 48 43 62)(font "Arial" (font_size 8)))
+		(text "opA[3..0]" (rect 72 101 86 152)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 176)(pt 80 160)(line_width 3))
+	)
+	(port
+		(pt 104 176)
+		(output)
+		(text "opB[3..0]" (rect -8 48 42 62)(font "Arial" (font_size 8)))
+		(text "opB[3..0]" (rect 96 102 110 152)(font "Arial" (font_size 8))(vertical))
+		(line (pt 104 176)(pt 104 160)(line_width 3))
+	)
+	(port
+		(pt 128 176)
+		(output)
+		(text "res[7..0]" (rect -8 48 39 62)(font "Arial" (font_size 8)))
+		(text "res[7..0]" (rect 120 105 134 152)(font "Arial" (font_size 8))(vertical))
+		(line (pt 128 176)(pt 128 160)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 160)(line_width 1))
+	)
+)
