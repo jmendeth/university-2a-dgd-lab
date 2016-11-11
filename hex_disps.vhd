@@ -1,22 +1,16 @@
--- HEX to 7S displays routing module for the DE2 board
--- version DD-1.0 - march 2011
-
 library ieee;
 use ieee.std_logic_1164.all;
---use ieee.std_logic_arith.all;
 
 entity hex_disps is
   port ( num0, num1, num2, num3, num4, num5, num6, num7 : in std_logic_vector (3 downto 0);
-         HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : out std_logic_vector (6 downto 0));
-end hex_disps ;
+         HEX7, HEX6, HEX5, HEX4, HEX3, HEX2, HEX1, HEX0 : out std_logic_vector (6 downto 0));
+end;
 
 architecture struct of hex_disps is
-
   component BCD7seg
-    port ( num  : in std_logic_vector (3 downto 0);
-           HEX  : out std_logic_vector (6 downto 0));
+    port ( num : in std_logic_vector (3 downto 0);
+           HEX : out std_logic_vector (6 downto 0));
   end component;
-
 begin
 
  display0: BCD7seg
