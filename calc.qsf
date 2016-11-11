@@ -476,6 +476,7 @@ set_location_assignment PIN_V24 -to GPIO_B[32]
 set_location_assignment PIN_V23 -to GPIO_B[33]
 set_location_assignment PIN_W25 -to GPIO_B[34]
 set_location_assignment PIN_W23 -to GPIO_B[35]
+set_global_assignment -name BDF_FILE imported/CA2_SIG_SS.bdf
 set_global_assignment -name BDF_FILE imported/MULT_8x1.bdf
 set_global_assignment -name BDF_FILE imported/MULT_8x8.bdf
 set_global_assignment -name BDF_FILE imported/MULT_ACC.bdf
