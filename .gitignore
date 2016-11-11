@@ -8,6 +8,7 @@ undo_redo.txt
 *.rpt
 *.summary
 *.qmsg
+*.smsg
 
 *.qws
 *.pof
