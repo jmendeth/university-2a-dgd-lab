@@ -18,6 +18,8 @@ architecture struct of hex_disps is
     port ( sig : in std_logic;
            ss : out std_logic_vector(6 downto 0));
   end component;
+  
+  signal hexSigRes, hexRes1, hexRes0 : std_logic_vector(6 downto 0);
 begin
 
   displaySigA: CA2_SIG_SS
@@ -33,10 +35,14 @@ begin
   HEX3 <= "1111111";
 
   displaySigRes: CA2_SIG_SS
-    port map( sig => sigRes, ss => HEX2 );
+    port map( sig => sigRes, ss => hexSigRes );
   displayRes1: BCD7seg
-    port map( num => res(7 downto 4), HEX => HEX1 );
+    port map( num => res(7 downto 4), HEX => hexRes1 );
   displayRes0: BCD7seg
-    port map( num => res(3 downto 0), HEX => HEX0 );
+    port map( num => res(3 downto 0), HEX => hexRes0 );
+  
+  HEX2 <= "1111111" when res(7 downto 4) = x"0" else hexSigRes;
+  HEX1 <= hexSigRes when res(7 downto 4) = x"0" else hexRes1;
+  HEX0 <= hexRes0;
 
 end struct;
