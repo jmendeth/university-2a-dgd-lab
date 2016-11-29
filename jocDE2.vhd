@@ -34,7 +34,7 @@ architecture bdf_type of jocDE2 is
            nrst : in std_logic;
            keycode : in std_logic_vector(3 downto 0);
            comp : out std_logic_vector(2 downto 0);
-           num : out std_logic_vector(7 downto 0) );
+           num : out std_logic_vector(11 downto 0) );
   end component;
   
   component leds
@@ -58,7 +58,7 @@ architecture bdf_type of jocDE2 is
   signal nkey : std_logic;
   signal keycode : std_logic_vector(3 downto 0);
   signal comp : std_logic_vector(2 downto 0);
-  signal num : std_logic_vector(7 downto 0);
+  signal num : std_logic_vector(11 downto 0);
   
   signal blank : std_logic_vector(3 downto 0);
 begin
@@ -99,16 +99,16 @@ begin
   blank <= "1111";
 
   hex_disps_inst : hex_disps port map(
-    num7 => num(7 downto 4),
-    num6 => num(3 downto 0),
+    num7 => blank,
+    num6 => blank,
     
     num5 => blank,
     num4 => blank,
     
     num3 => blank,
-    num2 => blank,
-    num1 => blank,
-    num0 => blank,
+    num2 => num(11 downto 8),
+    num1 => num(7 downto 4),
+    num0 => num(3 downto 0),
     
     HEX7 => HEX7, HEX6 => HEX6, HEX5 => HEX5, HEX4 => HEX4,
     HEX3 => HEX3, HEX2 => HEX2, HEX1 => HEX1, HEX0 => HEX0

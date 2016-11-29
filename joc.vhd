@@ -6,7 +6,7 @@ entity joc is
          nkey : in std_logic;
          keycode : in std_logic_vector(3 downto 0);
          comp : out std_logic_vector(2 downto 0);
-         num : out std_logic_vector(7 downto 0) );
+         num : out std_logic_vector(11 downto 0) );
 end;
 
 architecture components of joc is
@@ -29,23 +29,23 @@ architecture components of joc is
            nrst : in std_logic;
            eshft : in std_logic;
            keycode : in std_logic_vector(3 downto 0);
-           num : out std_logic_vector(7 downto 0) );
+           num : out std_logic_vector(11 downto 0) );
   end component;
   
   component comptador is
     port ( ecnt : in std_logic;
            nrst, clk : in std_logic;
-           numx : out std_logic_vector(7 downto 0) );
+           numx : out std_logic_vector(11 downto 0) );
   end component;
   
   component comparador is
-    port ( numx, num : in std_logic_vector(7 downto 0);
+    port ( numx, num : in std_logic_vector(11 downto 0);
            ngtx, neqx, nltx : out std_logic );
   end component;
   
   signal bcd, ast, coi : std_logic;
   signal ecnt, eshft : std_logic;
-  signal num_i, numx : std_logic_vector(7 downto 0);
+  signal num_i, numx : std_logic_vector(11 downto 0);
   signal ngtx, neqx, nltx : std_logic;
 begin
 
