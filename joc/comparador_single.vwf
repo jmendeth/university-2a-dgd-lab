@@ -1,0 +1,754 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 24000.0;
+	SIMULATION_TIME = 24000.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 800.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("neqx")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("neqxi")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("ngtx")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("ngtxi")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("nltx")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("nltxi")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("num")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("num[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "num";
+}
+
+SIGNAL("num[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "num";
+}
+
+SIGNAL("num[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "num";
+}
+
+SIGNAL("num[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "num";
+}
+
+SIGNAL("numx")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("numx[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "numx";
+}
+
+SIGNAL("numx[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "numx";
+}
+
+SIGNAL("numx[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "numx";
+}
+
+SIGNAL("numx[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "numx";
+}
+
+TRANSITION_LIST("neqx")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 8009.488;
+		LEVEL 1 FOR 3.418;
+		LEVEL 0 FOR 1.123;
+		LEVEL 1 FOR 79.18;
+		LEVEL 0 FOR 720.0;
+		LEVEL 1 FOR 0.035;
+		LEVEL 0 FOR 79.965;
+		LEVEL 1 FOR 79.7;
+		LEVEL 0 FOR 639.997;
+		LEVEL 1 FOR 0.303;
+		LEVEL 0 FOR 0.035;
+		LEVEL 1 FOR 0.885;
+		LEVEL 0 FOR 159.08;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 719.7;
+		LEVEL 1 FOR 0.3;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 79.262;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 0.438;
+		LEVEL 0 FOR 480.3;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 719.7;
+		LEVEL 1 FOR 0.3;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 79.7;
+		LEVEL 0 FOR 800.3;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 559.262;
+		LEVEL 1 FOR 0.438;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 0.3;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 79.262;
+		LEVEL 0 FOR 800.738;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 719.697;
+		LEVEL 1 FOR 0.303;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 76.279;
+		LEVEL 0 FOR 7990.512;
+	}
+}
+
+TRANSITION_LIST("neqxi")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 8000.0;
+		LEVEL 1 FOR 8000.0;
+		LEVEL 0 FOR 8000.0;
+	}
+}
+
+TRANSITION_LIST("ngtx")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 8013.159;
+		LEVEL 0 FOR 799.291;
+		LEVEL 1 FOR 79.706;
+		LEVEL 0 FOR 559.859;
+		LEVEL 1 FOR 0.435;
+		LEVEL 0 FOR 160.627;
+		LEVEL 1 FOR 158.776;
+		LEVEL 0 FOR 480.162;
+		LEVEL 1 FOR 0.435;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 159.403;
+		LEVEL 0 FOR 0.303;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 399.859;
+		LEVEL 1 FOR 0.435;
+		LEVEL 0 FOR 159.851;
+		LEVEL 1 FOR 319.542;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 399.855;
+		LEVEL 0 FOR 239.687;
+		LEVEL 1 FOR 0.458;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 479.552;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 0.448;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 479.552;
+		LEVEL 0 FOR 0.303;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 79.697;
+		LEVEL 1 FOR 0.448;
+		LEVEL 0 FOR 160.149;
+		LEVEL 1 FOR 0.627;
+		LEVEL 0 FOR 0.118;
+		LEVEL 1 FOR 638.991;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 719.97;
+		LEVEL 0 FOR 8067.844;
+	}
+}
+
+TRANSITION_LIST("ngtxi")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 8000.0;
+		LEVEL 0 FOR 16000.0;
+	}
+}
+
+TRANSITION_LIST("nltx")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 8090.435;
+		LEVEL 1 FOR 240.0;
+		LEVEL 0 FOR 0.3;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 0.055;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 159.347;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 0.598;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 0.055;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 159.347;
+		LEVEL 1 FOR 0.298;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 79.702;
+		LEVEL 0 FOR 0.598;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 0.055;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 319.945;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 0.055;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 399.645;
+		LEVEL 1 FOR 240.0;
+		LEVEL 0 FOR 0.355;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 479.347;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 0.653;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 479.347;
+		LEVEL 1 FOR 0.298;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 79.702;
+		LEVEL 0 FOR 0.653;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 640.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 719.645;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 800.508;
+		LEVEL 1 FOR 7989.057;
+	}
+}
+
+TRANSITION_LIST("nltxi")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 16000.0;
+		LEVEL 1 FOR 8000.0;
+	}
+}
+
+TRANSITION_LIST("num[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 6400.0;
+		LEVEL 1 FOR 1600.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 6400.0;
+			LEVEL 1 FOR 1600.0;
+		}
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 6400.0;
+			LEVEL 1 FOR 1600.0;
+		}
+	}
+}
+
+TRANSITION_LIST("num[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 3200.0;
+			LEVEL 1 FOR 3200.0;
+		}
+		LEVEL 0 FOR 4800.0;
+		LEVEL 1 FOR 3200.0;
+		LEVEL 0 FOR 4800.0;
+		LEVEL 1 FOR 3200.0;
+		LEVEL 0 FOR 1600.0;
+	}
+}
+
+TRANSITION_LIST("num[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 1600.0;
+			LEVEL 1 FOR 1600.0;
+		}
+		LEVEL 0 FOR 3200.0;
+		LEVEL 1 FOR 1600.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1600.0;
+			LEVEL 1 FOR 1600.0;
+		}
+		LEVEL 0 FOR 3200.0;
+		LEVEL 1 FOR 1600.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1600.0;
+			LEVEL 1 FOR 1600.0;
+		}
+		LEVEL 0 FOR 1600.0;
+	}
+}
+
+TRANSITION_LIST("num[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 0 FOR 800.0;
+			LEVEL 1 FOR 800.0;
+		}
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 800.0;
+			LEVEL 1 FOR 800.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 800.0;
+				LEVEL 1 FOR 800.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 800.0;
+			LEVEL 1 FOR 800.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 800.0;
+				LEVEL 1 FOR 800.0;
+			}
+		}
+	}
+}
+
+TRANSITION_LIST("numx[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 640.0;
+		LEVEL 1 FOR 160.0;
+		NODE
+		{
+			REPEAT = 29;
+			LEVEL 0 FOR 640.0;
+			LEVEL 1 FOR 160.0;
+		}
+	}
+}
+
+TRANSITION_LIST("numx[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 320.0;
+			LEVEL 1 FOR 320.0;
+		}
+		LEVEL 0 FOR 480.0;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 480.0;
+		NODE
+		{
+			REPEAT = 27;
+			LEVEL 1 FOR 320.0;
+			LEVEL 0 FOR 480.0;
+		}
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("numx[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 160.0;
+		}
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 160.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 160.0;
+		}
+		LEVEL 0 FOR 320.0;
+		NODE
+		{
+			REPEAT = 27;
+			LEVEL 1 FOR 160.0;
+			NODE
+			{
+				REPEAT = 1;
+				LEVEL 0 FOR 160.0;
+				LEVEL 1 FOR 160.0;
+			}
+			LEVEL 0 FOR 320.0;
+		}
+		LEVEL 1 FOR 160.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 160.0;
+		}
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("numx[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 80.0;
+		}
+		NODE
+		{
+			REPEAT = 29;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 80.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 80.0;
+				LEVEL 1 FOR 80.0;
+			}
+		}
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ngtxi";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "neqxi";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "nltxi";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "numx";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 0;
+	CHILDREN = 4, 5, 6, 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "numx[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "numx[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "numx[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "numx[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "num";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 0;
+	CHILDREN = 9, 10, 11, 12;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "num[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "num[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "num[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "num[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "ngtx";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "neqx";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "nltx";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 0;
+}
+
+TIME_BAR
+{
+	TIME = 20250;
+	MASTER = TRUE;
+}
+;
