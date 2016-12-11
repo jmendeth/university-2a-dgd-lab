@@ -13,14 +13,14 @@ architecture components of joc is
   component keygroup is
     port ( x : in std_logic_vector(3 downto 0);
            nkey : in std_logic;
-           bcd, ast, coi : out std_logic );
+           bcd, ast, coi, let : out std_logic );
   end component;
   
   component control is
-    port ( bcd, ast, coi : in std_logic;
+    port ( bcd, ast, coi, let : in std_logic;
            ngtx, neqx, nltx : in std_logic;
            clk, nrst : in std_logic;
-           eshft, ecnt : out std_logic;
+           eshft, ecnt, show : out std_logic;
            comp : out std_logic_vector(2 downto 0) );
   end component;
   
@@ -43,22 +43,22 @@ architecture components of joc is
            ngtx, neqx, nltx : out std_logic );
   end component;
   
-  signal bcd, ast, coi : std_logic;
-  signal ecnt, eshft : std_logic;
+  signal bcd, ast, coi, let : std_logic;
+  signal ecnt, eshft, show : std_logic;
   signal num_i, numx : std_logic_vector(11 downto 0);
   signal ngtx, neqx, nltx : std_logic;
 begin
 
   keygroup_inst : keygroup port map (
     nkey => nkey, x => keycode,
-    bcd => bcd, ast => ast, coi => coi
+    bcd => bcd, ast => ast, coi => coi, let => let
   );
   
   control_inst : control port map (
     clk => clk, nrst => nrst,
-    bcd => bcd, ast => ast, coi => coi,
+    bcd => bcd, ast => ast, coi => coi, let => let,
     ngtx => ngtx, neqx => neqx, nltx => nltx,
-    ecnt => ecnt, eshft => eshft, comp => comp
+    ecnt => ecnt, eshft => eshft, show => show, comp => comp
   );
 
   comptador_inst : comptador port map (
@@ -78,6 +78,6 @@ begin
     ngtx => ngtx, neqx => neqx, nltx => nltx
   );
 
-  num <= num_i;
+  num <= num_i when show = '0' else numx;
 
 end components;
