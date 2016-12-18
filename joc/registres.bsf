@@ -59,6 +59,6 @@ applicable agreement for further details.
 		(line (pt 192 64)(pt 176 64)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 168 112)(line_width 1))
+		(rectangle (rect 16 16 176 112)(line_width 1))
 	)
 )
