@@ -54,8 +54,8 @@ applicable agreement for further details.
 	(port
 		(pt 192 64)
 		(output)
-		(text "num[7..0]" (rect 8 0 59 14)(font "Arial" (font_size 8)))
-		(text "num[7..0]" (rect 120 59 171 73)(font "Arial" (font_size 8)))
+		(text "num[11..0]" (rect 8 0 67 14)(font "Arial" (font_size 8)))
+		(text "num[11..0]" (rect 112 56 171 70)(font "Arial" (font_size 8)))
 		(line (pt 192 64)(pt 176 64)(line_width 3))
 	)
 	(drawing
